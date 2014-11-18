@@ -3,12 +3,26 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <div class="container">
+    <header>
+      <h1>1-Hour Todos</h1>
+      <form class="new-task">
+        <input type="text" name="title" placeholder="Enter task name here">
+        <input type="text" name="description" placeholder="Enter task description here...">
+        <button type="submit">Add Task</button>
+      </form>
+    </header>
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="task">
+  <li>
+    <span class="task-title">{{title}}</span><span class="task-description">{{description}}</span>
+    <button class="delete">Remove</button>
+  </li>
 </template>

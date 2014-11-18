@@ -1,1 +1,83 @@
 /* CSS declarations go here */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+  background: #1A2980;
+  background: radial-gradient(circle at 2.03% 32.97%, #1A2980, transparent 100%),
+  radial-gradient(circle at 97.97% 90.93%, #26D0CE, transparent 100%),
+  radial-gradient(circle at 50% 50%, #4aa0ad, #4aa0ad 100%)
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1rem 1rem 1rem 1.4rem;
+  border-radius: 10px 10px 0 0;
+}
+
+input {
+  width: 100%;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  display: block;
+  font-size: 1.2rem;
+  border: 0;
+  border-bottom: 2px solid lightgray;
+}
+
+/* List Styling */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;;
+}
+
+li {
+  padding: 1.2rem;
+}
+
+li:nth-child(even) {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+li:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.7)
+}
+li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.task-title {
+  text-transform: uppercase;
+}
+
+.task-description {
+  margin-left: 1rem;
+  color: gray;
+  overflow: hidden;
+}
+
+.delete {
+  float: right;
+  height: 1.8rem;
+  padding: 0.2rem 0.4rem;
+  background: #F04B48;
+  font-size: 1.1rem;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+}
+
+.delete:hover {
+  background: #FF7A78;
+}
