@@ -4,7 +4,7 @@
   "description": "--- ## Features * Add task and description * Remove tasks from list",
   "main": "todos-demo.js",
   "scripts": {
-    "deploy": "push-dir --dir=dist --branch=gh-pages",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
