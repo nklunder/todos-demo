@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nklunder/todos-demo/issues"
   },
-  "homepage": "https://github.com/nklunder/todos-demo#readme"
+  "homepage": "https://github.com/nklunder/todos-demo#readme",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
 }
